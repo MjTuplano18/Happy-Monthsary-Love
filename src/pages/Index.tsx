@@ -7,6 +7,7 @@ import MemoryGallery from "@/components/MemoryGallery";
 import LoveLetter from "@/components/LoveLetter";
 import FinalSection from "@/components/FinalSection";
 import FloatingHearts from "@/components/FloatingHearts";
+import SakuraFall from "@/components/SakuraFall";
 import MusicToggle, { startMusicOnGesture } from "@/components/MusicToggle";
 
 const Index = () => {
@@ -61,6 +62,7 @@ const Index = () => {
 
       {splashDone && <CinematicIntro onComplete={handleIntroComplete} />}
       <FloatingHearts />
+      <SakuraFall />
       <MusicToggle />
 
       {introComplete && (

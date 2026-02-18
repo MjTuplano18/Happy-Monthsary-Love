@@ -183,6 +183,47 @@
     transform-style: preserve-3d;
   }
 
+  /* Sakura petals */
+  @keyframes sakura-fall {
+    0% {
+      transform: translateY(-40px) translateX(0px);
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(105vh) translateX(40px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes sakura-sway {
+    0%   { margin-left: 0px; }
+    25%  { margin-left: 30px; }
+    50%  { margin-left: -10px; }
+    75%  { margin-left: 20px; }
+    100% { margin-left: 0px; }
+  }
+
+  @keyframes sakura-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  .sakura-petal {
+    animation:
+      sakura-fall var(--fall-duration, 10s) var(--fall-delay, 0s) infinite linear,
+      sakura-sway var(--sway-duration, 4s) var(--sway-delay, 0s) infinite ease-in-out;
+  }
+
+  .sakura-petal svg {
+    animation: sakura-spin var(--spin-duration, 4s) linear infinite;
+  }
+
   /* Music toggle pulse */
   @keyframes pulse-ring {
     0% { box-shadow: 0 0 0 0 hsla(var(--rose) / 0.4); }

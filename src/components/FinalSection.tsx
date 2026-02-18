@@ -38,7 +38,7 @@ const FinalSection = () => {
           transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
           className="font-display text-3xl md:text-5xl lg:text-6xl text-primary rose-glow mt-4 md:mt-6"
         >
-          and I still choose you every day.
+          and I still choose you every day, My Love❤️
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -47,7 +47,7 @@ const FinalSection = () => {
           transition={{ duration: 1, delay: 1 }}
           className="mt-10"
         >
-          <span className="text-4xl">❤️</span>
+          <span className="text-4xl"></span>
         </motion.div>
 
         <motion.div

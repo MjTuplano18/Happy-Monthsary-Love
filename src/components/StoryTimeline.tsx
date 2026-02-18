@@ -9,8 +9,8 @@ import video7 from "@/assets/video7.mp4";
 
 const moments = [
   {
-    date: "",
-    title: "Where It All Began",
+    date: "Most Happy Moment",
+    title: "So Happy with you",
     description: "The universe conspired to bring two souls together. A moment that would change everything.",
     video: video1,
   },
@@ -27,8 +27,8 @@ const moments = [
     video: video3,
   },
   {
-    date: "February 2026",
-    title: "50 Months of Us",
+    date: "Ramen with Mochi",
+    title: "Our Monthsary eating with Ramen",
     description: "Half a hundred months. Thousands of moments. One infinite love.",
     video: video4,
   },
@@ -36,13 +36,13 @@ const moments = [
     date: "Our Adventures",
     title: "Places We Explored",
     description: "Every road we took, every place we visited — it was always better because you were there.",
-    video: video5,
+    video: video6,
   },
   {
     date: "Little Things",
     title: "The Everyday Magic",
     description: "It wasn't the grand gestures — it was the quiet, ordinary moments that meant everything.",
-    video: video6,
+    video: video5,
   },
   {
     date: "Always & Forever",
