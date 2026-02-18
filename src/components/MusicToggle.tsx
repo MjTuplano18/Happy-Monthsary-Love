@@ -89,23 +89,3 @@ const MusicToggle = () => {
 };
 
 export default MusicToggle;
-
-
-  return (
-    <button
-      onClick={toggle}
-      className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full glass-card flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer ${
-        playing ? "music-pulse border-primary/30" : "border-foreground/10"
-      }`}
-      aria-label={playing ? "Mute music" : "Play music"}
-    >
-      {playing ? (
-        <Music className="w-5 h-5 text-primary" />
-      ) : (
-        <VolumeX className="w-5 h-5 text-muted-foreground" />
-      )}
-    </button>
-  );
-};
-
-export default MusicToggle;
